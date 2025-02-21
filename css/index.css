@@ -1,0 +1,86 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.479)), url('../images/What-is-the-cloud-pexels-1024x683.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.loader {
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    animation: skLinRotate 1s ease-in-out infinite alternate;
+}
+
+.loader:after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top-color: #198754;
+}
+
+input[type="search"]::placeholder {
+    color: rgb(197, 196, 196) !important;
+}
+
+@keyframes skLinRotate {
+
+    95%,
+    100% {
+        transform: rotate(840deg)
+    }
+}
+
+a {
+    color: inherit !important;
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: rgba(255, 255, 255, 0.334);
+    border-color: #198754;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid #198754;
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.my-custom-button {
+    background-color: #198754 !important; /* Green background */
+    color: white !important; /* White text */
+    border: none !important; /* Remove border */
+    padding: 10px 20px !important; /* Add padding */
+    border-radius: 5px !important; /* Rounded corners */
+    font-size: 16px !important; /* Font size */
+    cursor: pointer !important; /* Pointer cursor */
+  }
+
+  .my-custom-button1 {
+    background-color: red !important; /* Green background */
+    color: white !important; /* White text */
+    border: none !important; /* Remove border */
+    padding: 10px 20px !important; /* Add padding */
+    border-radius: 5px !important; /* Rounded corners */
+    font-size: 16px !important; /* Font size */
+    cursor: pointer !important; /* Pointer cursor */
+  }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Page</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="d-flex justify-content-center align-items-center overflow-auto">
+
+    <nav class="navbar navbar-expand-lg bg-success fixed-top z-2">
+        <div class="container text-white">
+            <a class="navbar-brand" href="#"><img class="w-25 bg-info" src="images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item fs-4 ">
+                        <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="spinner z-3 signup vh-100 bg-secondary-subtle d-block position-fixed top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+        <span class="loader"></span>
+    </div>
+
+    <main class="container mt-5 w-50 border border-success bg-white bg-opacity-50 rounded-4 p-4">
+        <h1 class="text-success text-center mb-4">Sign up Page</h1>
+        <form class="row g-2">
+            <div class="col-12">
+                <label for="inputEmail4" class="form-label text-light-emphasis">Email</label>
+                <input type="text" placeholder="User Name" class="form-control" id="signupUser" autocomplete="username">
+            </div>
+            <div class="col-12">
+                <label for="inputEmail4" class="form-label text-light-emphasis">Email</label>
+                <input type="email" placeholder="Email" class="form-control" id="signupEmail" autocomplete="email">
+            </div>
+            <div class="col-12">
+                <label for="inputPassword4" class="form-label text-light-emphasis">Password</label>
+                <input type="password" placeholder="Password" class="form-control" id="signupPassword"
+                    autocomplete="new-password">
+            </div>
+            <div class="col-12">
+                <label for="inputPassword4" class="form-label text-light-emphasis">RePassword</label>
+                <input type="password" placeholder="Re Password" class="form-control" id="signupConfirmPassword"
+                    autocomplete="new-password">
+            </div>
+            
+            <div class="col-12">
+                <button type="submit" class="btn btn-outline-success mt-4" disabled id="signupBtn">Sign up</button>
+            </div>
+        </form>
+    </main>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

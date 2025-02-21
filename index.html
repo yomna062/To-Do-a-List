@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-success z-2 mb-5">
+        <div class="container text-white">
+            <a class="navbar-brand" href="#"><img class="w-25 bg-info" src="images/logo.png" alt=""></a>
+            <h1></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item fs-4 ">
+                        <a class="nav-link active" aria-current="page" href="login.html" id="logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="spinner z-3 home vh-100 bg-secondary-subtle d-block position-fixed top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+        <span class="loader"></span>
+    </div>
+
+    <main>
+        <div class="top container">
+            <div class="row">
+                <div class="col-md-4 animate__animated animate__bounceInUp">
+                    <div class="inner">
+                        <h1><i class="fa-solid fa-circle-check"></i> TO-<span class="text-success">DO</span> List</h1>
+                    </div>
+                </div>
+                <div class="col-md-4 animate__animated animate__bounceInDown">
+                    <div class="mb-3">
+                        <input type="search" class="form-control py-3 border-success-subtle" id="floatingInput"
+                            placeholder="Search By Content">
+                    </div>
+                </div>
+                <div class="col-md-4 animate__animated animate__bounceInDown">
+                    <div class="mb-3">
+                        <input type="search" class="form-control py-3 border-success-subtle" id="floatingInput"
+                            placeholder="Search By Type">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="addTask container my-5 animate__animated animate__jackInTheBox">
+            <h2 class="mb-3">Add Task</h2>
+
+            <div class="mb-3">
+                <input type="text" class="form-control border-success-subtle bg-info-subtle" id="taskName"
+                    placeholder="Task Name">
+                    <div class="alert alert-danger d-none" role="alert">
+    
+                      </div>
+            </div>
+            <div class="mb-3">
+                <input type="text" list="list" class="form-control border-success-subtle bg-info-subtle" id="taskType"
+                    placeholder="Task Type" autocomplete=" ">
+                    <div class="alert alert-danger d-none" role="alert">
+                      </div>
+
+                <datalist id="list">
+                    <option value="HTML" />
+                    <option value="CSS" />
+                    <option value="JS" />
+                </datalist>
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-success d-block" id="add">Add Task <i
+                        class="fa-solid fa-plus"></i></button>
+                <button type="button" class="btn btn-warning d-none" id="update">Update Task <i
+                    class="fa-solid fa-pen-to-square"></i></button>
+            </div>
+        </div>
+
+        <div class="bg-info">
+            <div class="container">
+                <div class="row mb-5 " id="rowData">
+                    <!-- <div class="col-12 my-3">
+                        <div class="inner d-flex justify-content-between bg-success-subtle bg-opacity-25 rounded-4 px-4 py-2">
+                            <div>
+                                <h3 class="mb-3">Name</h3>
+                                <h4>Type</h4>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button type="button" class="btn btn-outline-danger me-3"><i class="fa-regular fa-trash-can"></i></button>
+                                <button type="button" class="btn btn-outline-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
